@@ -13,7 +13,7 @@ public class Post {
     private Long id;
 
     private String title, anons, full_text;
-    private int viewsCount;
+    private int views_count;
 
     public Post() {}
 
@@ -55,11 +55,11 @@ public class Post {
         this.full_text = full_text;
     }
 
-    public int getViewsCount() {
-        return viewsCount;
+    public int getViews_count() {
+        return views_count;
     }
 
-    public void setViewsCount(int viewsCount) {
-        this.viewsCount = viewsCount;
+    public void setViews_count(int views_count) {
+        this.views_count = views_count;
     }
 }
