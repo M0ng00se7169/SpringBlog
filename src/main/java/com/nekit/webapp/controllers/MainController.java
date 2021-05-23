@@ -8,8 +8,14 @@ import org.springframework.web.bind.annotation.GetMapping;
 public class MainController {
 
     @GetMapping("/")
-    public String greeting(Model model) {
+    public String home(Model model) {
         model.addAttribute("title", "Strona główna");
         return "home";
+    }
+
+    @GetMapping("/about")
+    public String about(Model model) {
+        model.addAttribute("title", "Strona o nas");
+        return "about";
     }
 }
